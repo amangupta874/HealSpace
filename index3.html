@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign In - HealSpace</title>
     <link rel="stylesheet" href="project3.css">
 </head>
 <body>
-    <h1 class="logo">Heal<span>Space</span></h1>
-    <div id="login">
-        <h1>Sign in</h1>
-        <h1 id="logg">It's great to see you again</h1>
-        <label for="userInput" id="mob">Mobile/Email</label>
-        <input type="text" id="userInput" name="userInput" placeholder="Mobile number or email" required>
-    <div class="form-group">
-        <label for="password" id="pas">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-    </div>
-        <button id="submit" type="submit">Sign in</button>
-        <button id="Sign" type="submit">New here ? <span>Create a free account</span></button>
-    </div>
+    <header class="header">
+        <a href="index.html" class="logo">Heal<span>Space</span></a>
+    </header>
+
+    <main class="login-wrapper">
+        <form id="login" onsubmit="event.preventDefault();">
+            <h1>Sign in</h1>
+            <p id="logg">It's great to see you again</p>
+
+            <div class="form-group">
+                <label for="userInput" id="mob">Mobile / Email</label>
+                <input type="text" id="userInput" name="userInput" placeholder="Mobile number or email" required autocomplete="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password" id="pas">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="current-password">
+            </div>
+
+            <button id="submit" type="submit">Sign in</button>
+            <a href="index2.html" id="Sign-link">
+                <button id="Sign" type="button">New here? <span>Create a free account</span></button>
+            </a>
+        </form>
+    </main>
 </body>
 </html>
