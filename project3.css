@@ -1,7 +1,3 @@
-/* ==========================================================================
-   HealSpace - Sign In Page Responsive CSS (Pure CSS)
-   ========================================================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +71,8 @@ body {
     margin-bottom: 16px;
 }
 
-#mob, #pas {
+#mob,
+#pas {
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -83,7 +80,8 @@ body {
     color: #2c4a4f;
 }
 
-#userInput, #password {
+#userInput,
+#password {
     width: 100%;
     padding: 12px 14px;
     border-radius: 12px;
@@ -95,7 +93,8 @@ body {
     transition: all 0.25s ease;
 }
 
-#userInput:focus, #password:focus {
+#userInput:focus,
+#password:focus {
     border-color: #2FA4A9;
     box-shadow: 0 0 0 3px rgba(47, 164, 169, 0.2);
     background: #ffffff;
