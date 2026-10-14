@@ -604,28 +604,31 @@ img, video {
    ========================================================================== */
 #steps {
     width: 90%;
-    max-width: 1200px;
-    margin: 0 auto 80px;
+    max-width: 1240px;
+    margin: 0 auto 90px;
 }
 
 #steps .title {
-    font-size: clamp(22px, 3.2vw, 34px);
+    font-size: clamp(24px, 3.5vw, 36px);
     font-weight: 600;
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
     color: #0f2f3f;
 }
 
 #steps .box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 0;
+    gap: clamp(16px, 2.5vw, 28px);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .card {
     width: 100%;
-    border-radius: 18px;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
